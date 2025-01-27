@@ -27,7 +27,7 @@ class Filmarkiv2Test {
         Film film1 = new Film(1, "Produsent1", "Tittel1", 2020, "action", "Selskap1");
         filmarkiv.leggTilFilm(film1);
         assertEquals(film1, filmarkiv.finnFilm(1));
-        assertNull(filmarkiv.finnFilm(2)); // Film with ID 2 does not exist
+        assertNull(filmarkiv.finnFilm(2));
     }
 
     @Test
@@ -36,7 +36,7 @@ class Filmarkiv2Test {
         filmarkiv.leggTilFilm(film1);
         assertTrue(filmarkiv.slettFilm(1));
         assertEquals(0, filmarkiv.antall());
-        assertFalse(filmarkiv.slettFilm(2)); // Film with ID 2 does not exist
+        assertFalse(filmarkiv.slettFilm(2));
     }
 
     @Test
@@ -71,7 +71,7 @@ class Filmarkiv2Test {
         filmarkiv.leggTilFilm(film2);
 
         assertEquals(2, filmarkiv.antall(Sjanger.ACTION));
-        assertEquals(0, filmarkiv.antall(Sjanger.DRAMA)); // No films of this genre
+        assertEquals(0, filmarkiv.antall(Sjanger.DRAMA));
     }
 
     @Test
