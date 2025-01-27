@@ -63,7 +63,7 @@ public class Film {
         return sjanger;
     }
 
-    public void setShjanger(String sjanger) {
+    public void setSjanger(String sjanger) {
         this.sjanger = Sjanger.finnSjanger(sjanger);
     }
 

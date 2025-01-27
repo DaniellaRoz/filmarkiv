@@ -13,22 +13,6 @@ public class Filmarkiv implements FilmarkivADT {
         antall = 0;
     }
 
-    public Film[] getArkiv() {
-        return arkiv;
-    }
-
-    public void setArkiv(Film[] arkiv) {
-        this.arkiv = arkiv;
-    }
-
-    public int getAntall() {
-        return antall;
-    }
-
-    public void setAntall(int antall) {
-        this.antall = antall;
-    }
-
     private Film[] trimTab(Film[] tab, int n) {
         Film[] nytab = new Film[n];
         int i = 0;
